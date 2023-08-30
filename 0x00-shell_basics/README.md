@@ -4,3 +4,7 @@ this script prints the absolute path name of the 0-curret working directory
 this script Display the contents list of your current directory.
 2-bring_me_home
 this script changes the working directory to the user's home directory
+3-listfiles
+this script Display current directory contents in a long format
+4-listmorefiles
+this script Display current directory contents, including hidden files (starting with .). Use the long format.
