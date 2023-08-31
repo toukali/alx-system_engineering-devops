@@ -1,2 +1,2 @@
 #!/bin/bash
-su chown vincent:staff {pwd}/_hello
+su chown-h vincent:staff _hello
