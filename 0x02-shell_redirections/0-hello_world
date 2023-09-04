@@ -1,2 +1,3 @@
 #!/bin/bash
+echo 'Hello, world'
 echo 'Hello, world'>0-hello_world.txt
