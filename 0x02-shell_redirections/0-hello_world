@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e 'Hello, world /n'>0-hello_world.txt
+echo -e 'Hello, world /n'>0-hello_world
