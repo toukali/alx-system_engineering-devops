@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e 'Hello, world'>0-hello_world
+echo -e 'Hello, world'
