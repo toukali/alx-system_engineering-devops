@@ -1,0 +1,12 @@
+https://imgur.com/a/qb1BehH
+
+Link to image is above.
+
+Additional Requirement 
+(You must be able to explain some specifics about this infrastructure:
+For every additional element, why you are adding it):
+
+A second load balancer is added as a backup incase the other load balancer fails
+
+Servers for specific components are added. This increases performance and also security (database is more secured) of the system. 
+Horizontal scaling of the individual components will become easier.

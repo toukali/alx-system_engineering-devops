@@ -1,0 +1,56 @@
+https://imgur.com/a/7zsyqu6
+
+Link to image is above.
+
+Additional Requirement: 
+
+You must be able to explain some specifics about this infrastructure:
+What is a server
+What is the role of the domain name
+What type of DNS record www is in www.foobar.com
+What is the role of the web server
+What is the role of the application server
+What is the role of the database
+What is the server using to communicate with the computer of the user requesting the website
+You must be able to explain what the issues are with this infrastructure:
+SPOF
+Downtime when maintenance needed (like deploying new code web server needs to be restarted)
+Cannot scale if too much incoming traffic
+
+Answers:
+
+What is a server:
+A server is a piece of computer hardware or software (computer program) that provides functionality for other programs or devices, called "clients". 
+Servers are located in datacenters which are buildings that host hundreds, or even thousands of computers (servers). A server can be physical or virtual. A server runs an OS (operating system).
+
+What is the role of the domain name:
+The domain name serves to identify Internet resources, such as computers, networks, and services, with a text-based label that is easier to memorize than the numerical addresses used in the Internet protocols. The DNS helps translate the domain name www.foobar.com to it's server's IP address 8.8.8.8. This enables the browser to make requests and recieve responses from the server.
+
+What type of DNS record www is in www.foobar.com:
+An A record which translates the domain name to an IPV4 address 8.8.8.8
+
+What is the role of the web server:
+The role of the web server is to process web server requests and provide static (or stateless) content to the web browser
+
+What is the role of the application server:
+The role of the application server is to process web server requests and connect with the business logic and mysql database 
+to provide dynamic and updated content to the web browser.
+
+What is the role of the database:
+The role of the database is to store the application data/information
+
+What is the server using to communicate with the computer of the user requesting the website:
+The protocol used is the TCP/IP protocol.
+
+Issues with this Infrastructure
+
+SPOF (Single Point of Failure):
+This design just has one physical server, one web server, one application server and one database. 
+If any of these fails, the whole system fails as there is no redundancy.
+
+Downtime when maintenance needed:
+Maintenance or code upgrade will cause a downtime because there is no backup server to respond to the incoming request while the maintenance is being done.
+
+Cannot scale if too much incoming traffic:
+The infrastructure will be unable to scale due to the presence of a single server that handles all the requests. 
+There is also the absence of a load balancer which would be able to distribute incoming traffic between servers
