@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # Gracefully reloads Gunicorn.
-pgrep gunicorn | xargs kill -HUP
+# Get the PID of the Gunicorn process
+PID=$(pgrep gunicorn)
+
+# Reload Gunicorn gracefully
+kill -s HUP $PID
