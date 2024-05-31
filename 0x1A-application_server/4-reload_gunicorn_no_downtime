@@ -4,4 +4,5 @@
 PID=$(pgrep gunicorn)
 
 # Reload Gunicorn gracefully
-kill -s HUP $PID
+kill -s TERM $PID
+wait $PID
